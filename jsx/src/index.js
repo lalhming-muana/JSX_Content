@@ -10,7 +10,18 @@ const root = ReactDOM.createRoot(el);
 
 // create a component
 function App(){
-    return <h1>I dam maw</h1>
+    let message = "bye there";
+    if(Math.random()>0.5){
+        message ="a condition a dik e";
+        //variable ah hian string leh number chauh hman tur. A dang chu a diklo ang.
+        //object phei chu a diklo lehzual ang
+    }
+    return(
+        <>
+           <h1>Hi there</h1> 
+           <h1>{message}</h1>
+        </>
+    );
 } 
 
 // component tihlan tur
